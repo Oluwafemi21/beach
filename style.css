@@ -1,0 +1,257 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: whitesmoke;
+    margin: 0;
+    margin-top:30px;
+	padding:0;
+	font-size: 15px;
+}
+.pdown{
+    margin-top: 100px;
+}
+h1,h5{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+	padding:0px;
+}
+.current{
+    color:black;
+    font-weight: bold;
+
+}
+.main-header h1{
+    float:left;
+    width:40%;
+}
+.aside{
+    float:left;
+}
+.aside2{
+    float: left;
+    width: 60%;
+
+}
+#sub h3{
+    float: left;
+    width: 50%;
+}
+
+#sub form{
+	float: right;
+    margin-top: 15px;
+    width: 35%;
+}
+
+#sub input[type="email"]{
+    width: 65%;
+}
+form input[type="submit"]{ 
+    background-color: slategrey;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    color:white;
+}
+.sidebar2 h4{
+    color:black;
+}
+.sidebar2{
+    float:right;
+    width:35%;
+    padding: 5px;
+    
+}
+.sidebar{
+    float:right;
+}
+#navbar{
+    float: right;
+    width: auto;
+}
+
+#navbar ul{
+	list-style: none;
+	padding: 0;
+
+}
+
+#navbar li{
+	padding: 0 20px 0 20px;
+	float: left;
+	display: inline;
+	
+}
+#navbar a{
+	text-decoration: none;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 13px;
+	
+}
+#navbar a:hover{
+	color:black;
+}
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.main-header{
+	padding-top:10px;
+}
+
+.clr{
+	clear: both;
+
+}
+.btn{
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size:14px;
+    background-color: dodgerblue;
+    color:white;
+    padding: 6px;
+    border: none;
+    border-radius: 2px;
+}
+#form1{
+    float:left;
+    width: 30%;
+    margin-top: 100px;
+    
+}
+#form1 input[type="submit"]{ 
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    color: white;
+    letter-spacing: .1em;
+}
+
+#form1 input[type="text"], #form1 input[type="password"]{
+    display: block;
+    margin-bottom: 20px ;
+    padding: 3px;
+    height: 20px;
+    width:60%;
+    border-radius: 5px;
+    border: none;
+}
+#sidebar{
+    float: right;
+    width: 40%;
+    margin-top: 10px;
+}
+
+#sidebar #form2 label{ 
+    display: block;
+    padding-top: 5px;
+	margin-bottom: 2px;
+	font-size: 16px;
+    font-weight: 340px;
+    
+}
+
+#form1{
+    margin-left: 150px;
+}
+.gender{
+    padding: 3px;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 3px;
+}
+#sidebar #form2 input[type="text"], 
+#sidebar #form2 input[type="password"],
+#sidebar #form2 input[type="number"],
+#sidebar #form2 input[type="email"]{
+        padding: 3px;
+        border-radius: 3px;
+        border: none;
+        margin-bottom: 3px;
+        width: 80%;
+}
+#form2 input[type="submit"]{
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size:14px;
+    background-color: darkgray;
+    color:black;
+    padding: 6px;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-left:80px;
+    width: 30%;
+    margin-bottom: ;
+}
+
+
+@media(max-width: 768px){
+	#navbar li{
+		padding-left: 10px;
+		padding-right: 10px;
+    }
+    
+    .main-header h1, #navbar,
+	#navbar li,
+    #sub h3, #sub form, .sidebar,
+    .sidebar2, #form1, #sidebar,
+    .aside, .aside2{
+		float: none;
+		text-align: center;
+		width: 100%;
+    }
+
+	#sub form input[type="email"]{
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+
+	.btn,input[type="submit"]{
+		width: 100%;
+        margin-bottom: 5px;
+    }
+    #x1{
+        width: auto;
+        margin-bottom: 0;
+    }
+    
+    #sidebar #form2 input[type="text"], 
+    #sidebar #form2 input[type="password"],
+    #sidebar #form2 input[type="number"],
+    #sidebar #form2 input[type="email"]{
+        width: 70%;
+    }
+    
+    #form1{
+        margin:0; 
+    }
+    #form1 #signin input[type="text"],
+    #form1 #signin input[type="password"]
+    {
+        margin-left: 40px;
+        width: 78%
+    }
+    #form1 #signin input[type="submit"]{
+        width: 80%;
+        margin: 0;
+    }
+    
+    #lbl h5{
+        margin-left:0;
+    }
+    
+    #btn2 input[type="submit"]{
+        margin-left: 0;
+    }
+}
+
+
