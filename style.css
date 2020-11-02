@@ -215,10 +215,16 @@ form input[type="submit"]{
 	}
 
 
-	.btn,input[type="submit"]{
+	input[type="submit"]{
 		width: 100%;
         margin-bottom: 5px;
     }
+	
+	.btn{
+		width: 81%;
+		margin-bottom: 10px;
+    }
+	
     #x1{
         width: auto;
         margin-bottom: 0;
