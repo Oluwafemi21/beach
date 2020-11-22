@@ -1,41 +1,55 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 body{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	background-color: whitesmoke;
-    	margin: 0;
-   	margin-top:30px;
+    margin: 0;
+    margin-top:20px;
 	padding:0;
 	font-size: 15px;
+    margin-bottom: 40px;
 }
+
+
 .pdown{
     margin-top: 100px;
 }
+
+
 h1,h5{
     margin-top: 0;
     margin-bottom: 0;
 }
+
+
 ul{
 	padding:0px;
 }
+
+
 .current{
     color:black;
     font-weight: bold;
-
 }
+
+
 .main-header h1{
     float:left;
     width:40%;
 }
+
 .aside{
     float:left;
 }
+
 .aside2{
     float: left;
     width: 60%;
-
 }
+
 #sub h3{
     float: left;
     width: 50%;
@@ -50,6 +64,7 @@ ul{
 #sub input[type="email"]{
     width: 65%;
 }
+
 form input[type="submit"]{ 
     background-color: slategrey;
     border: none;
@@ -57,18 +72,26 @@ form input[type="submit"]{
     padding: 5px;
     color:white;
 }
+
 .sidebar2 h4{
-    color:black;
+    color:white;
+    text-align: center;
+    font-size: 20px;
 }
+
 .sidebar2{
     float:right;
     width:35%;
     padding: 5px;
-    
+    background-color: dodgerblue;
+    color: white;
 }
+
+
 .sidebar{
     float:right;
 }
+
 #navbar{
     float: right;
     width: auto;
@@ -77,7 +100,6 @@ form input[type="submit"]{
 #navbar ul{
 	list-style: none;
 	padding: 0;
-
 }
 
 #navbar li{
@@ -93,14 +115,17 @@ form input[type="submit"]{
     font-size: 13px;
 	
 }
+
 #navbar a:hover{
 	color:black;
 }
+
 .container{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
 }
+
 .main-header{
 	padding-top:10px;
 }
@@ -109,6 +134,7 @@ form input[type="submit"]{
 	clear: both;
 
 }
+
 .btn{
     text-decoration: none;
     text-transform:capitalize;
@@ -119,12 +145,14 @@ form input[type="submit"]{
     border: none;
     border-radius: 2px;
 }
+
 #form1{
     float:left;
     width: 30%;
     margin-top: 100px;
     
 }
+
 #form1 input[type="submit"]{ 
     background-color: dodgerblue;
     border: none;
@@ -143,6 +171,7 @@ form input[type="submit"]{
     border-radius: 5px;
     border: none;
 }
+
 #sidebar{
     float: right;
     width: 40%;
@@ -155,18 +184,25 @@ form input[type="submit"]{
 	margin-bottom: 2px;
 	font-size: 16px;
     font-weight: 340px;
-    
 }
 
 #form1{
     margin-left: 150px;
 }
+
 .gender{
     padding: 3px;
     border-radius: 3px;
     border: none;
     margin-bottom: 3px;
+    width: 81%;
+    cursor: pointer;
 }
+
+input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+
 #sidebar #form2 input[type="text"], 
 #sidebar #form2 input[type="password"],
 #sidebar #form2 input[type="number"],
@@ -177,6 +213,7 @@ form input[type="submit"]{
         margin-bottom: 3px;
         width: 80%;
 }
+
 #form2 input[type="submit"]{
     text-decoration: none;
     text-transform:capitalize;
@@ -186,12 +223,31 @@ form input[type="submit"]{
     padding: 6px;
     border: none;
     border-radius: 2px;
+    margin-top: 10px;
     font-weight: bold;
-    margin-left:80px;
+    margin-left: 25%;
     width: 30%;
-    margin-bottom: ;
 }
 
+
+/* RESPONSIVENES */
+/*LAPTOP*/
+@media(max-width: 1024px){
+    .container{
+        width: 90%;
+    }
+    
+    .aside{
+        width: 50%;
+    }
+    
+    .sidebar{
+        width: 50%;
+    }
+    
+}
+
+/*Tablet*/
 
 @media(max-width: 768px){
 	#navbar li{
@@ -208,45 +264,61 @@ form input[type="submit"]{
 		text-align: center;
 		width: 100%;
     }
+    
+    .pdown{
+        margin-top: 50px;
+    }
 
 	#sub form input[type="email"]{
-		width: 100%;
+		width: 97%;
 		margin-bottom: 5px;
 	}
-	
-	.btn{
-		width: 81%;
-		margin-bottom: 10px;
-	}
 
+    .btn{
+        width:80%;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    
+    a .btn{
+        width: 72%;
+    }
+    
+    .aside2 p , .sidebar2 p{
+        text-align: left;
+    }
+    
+    .sidebar{
+        padding: 5px;
+    }
+    .sidebar2 h4{
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
 	input[type="submit"]{
 		width: 100%;
         margin-bottom: 5px;
     }
-	
-	
-	
+    
     #x1{
         width: auto;
         margin-bottom: 0;
     }
     
-    #sidebar #form2 input[type="text"], 
-    #sidebar #form2 input[type="password"],
-    #sidebar #form2 input[type="number"],
-    #sidebar #form2 input[type="email"]{
-        width: 70%;
-    }
     
     #form1{
         margin:0; 
     }
+    
     #form1 #signin input[type="text"],
     #form1 #signin input[type="password"]
     {
-        margin-left: 40px;
-        width: 78%
+        margin-left: 10%;
+        width: 79%;
     }
+    
     #form1 #signin input[type="submit"]{
         width: 80%;
         margin: 0;
@@ -260,10 +332,24 @@ form input[type="submit"]{
         margin-left: 0;
     }
 }
+
+/*wide screen smart phones*/
+
+
+@media(max-width: 600px){
+    a .btn{
+        width: 92%;
+    }
+}
+
+/*SmartPhones*/
+
+
 @media(max-width: 375px){
     .container #navbar{
         width: 100%;
     }
+    
     #navbar li{
         padding-left: 5px;
         padding-right: 5px;
@@ -278,17 +364,37 @@ form input[type="submit"]{
         text-align: center;
         width: 100%;
     }
-
-    #sub form input[type="email"]{
-        width: 100%;
-        margin-bottom: 5px;
+    
+    .pdown{
+        margin-top: 50px;
+    }
+    
+    .aside2 p , .sidebar2 p{
+        text-align: left;
     }
 
-
+    #sub form input[type="email"]{
+		width: 96%;
+		margin-bottom: 5px;
+	}
+    
+    .sidebar2 h4{
+        margin:0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    
+    .sidebar2 p{
+        padding: 5px;
+    }
+    
+    
     .btn,input[type="submit"]{
         width: 100%;
         margin-bottom: 5px;
     }
+    
     #x1{
         display:none;
     }
@@ -297,18 +403,20 @@ form input[type="submit"]{
     #sidebar #form2 input[type="password"],
     #sidebar #form2 input[type="number"],
     #sidebar #form2 input[type="email"]{
-        width: 70%;
+        width: 80%;
     }
     
     #form1{
         margin:0; 
     }
+    
     #form1 #signin input[type="text"],
     #form1 #signin input[type="password"]
     {
-        margin-left: 40px;
-        width: 78%
+        margin-left: 30px;
+        width: 78%;
     }
+    
     #form1 #signin input[type="submit"]{
         width: 80%;
         margin: 0;
@@ -321,8 +429,18 @@ form input[type="submit"]{
     #btn2 input[type="submit"]{
         margin-left: 0;
     }
+    
+    .gender{
+        width: 80%;
+    }
+    
+    a .btn{
+        width: 100%;
+    }
 }
 
-
-
+/*SMALLER SCREENS*/
+@media(max-width: 320px){
+    
+}
 
